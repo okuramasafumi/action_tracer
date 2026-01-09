@@ -7,6 +7,8 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 # Specify your gem's dependencies in action_tracer.gemspec
 gemspec
 
+gem "rake", "~> 13.0"
+
 rails_version = ENV['RAILS_VERSION']
 if rails_version
   version = "~> #{rails_version}"
